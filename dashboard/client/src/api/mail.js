@@ -1,4 +1,4 @@
-[
+const mail = {[
 	{
 		"id": "55b03479-78d9-4384-8509-9457e49a087a",
 
@@ -117,4 +117,6 @@
 		"individualRecipient": "Collin Pham",
 		"timestamp": 1593907200000
 	}
-]
+]}
+
+module.export = mail;

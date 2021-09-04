@@ -1,0 +1,32 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack & nodemon server/index.js",
+    "react-dev": "webpack",
+    "server": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "css-loader": "^6.2.0",
+    "express": "^4.17.1",
+    "node": "^16.6.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "reactstrap": "^8.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.12",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
