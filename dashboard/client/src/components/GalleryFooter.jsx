@@ -1,12 +1,8 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 
 export const GalleryFooter = ({ totalMailItems, totalPages, currentPage, onPreviousPage, onNextPage }) => {
 
-  // useEffect(() => {
-  // }, [currentPage])
-
-  console.log('current page in footer:', currentPage)
   return (
     <Container className="gallery-footer">
       <Row xs="2">

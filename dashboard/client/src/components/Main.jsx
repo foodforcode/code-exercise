@@ -26,7 +26,6 @@ export const Main = () => {
   const getMailItems = () => {
     axios.get('/mail')
     .then(response => {
-      console.log('success', response.data);
       const mailChunks = chunkMail(response.data)
       setMailItems(response.data);
       setMailChunks(mailChunks);
@@ -41,8 +40,6 @@ export const Main = () => {
     getMailItems();
   }, [])
 
-  console.log('current page:', currentPage );
-  console.log('mailChunkIndex:', mailChunkIndex);
   return (
     <div>
       <Header />
