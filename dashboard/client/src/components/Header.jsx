@@ -3,8 +3,9 @@ import StableLogo from '../../dist/images/stable-logo.svg';
 
 export const Header = () => {
   return (
-    <Fragment>
-      <img src={StableLogo} width={"150px"} />
-    </Fragment>
+    <div className="header" >
+      <img src={StableLogo} width={"150px"} className="header-img" />
+      <hr />
+    </div>
   )
 }

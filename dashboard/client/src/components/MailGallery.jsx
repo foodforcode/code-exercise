@@ -10,13 +10,16 @@ export const MailGallery = ({ mailItems, mailChunks, mailChunkIndex, onPreviousP
   return (
     <Container>
       <GalleryHeader />
-      <Row xs="1" sm="3">
+      <div className="gallery-cards">
+
+      <Row xs="1" md="3">
         {mailChunks[mailChunkIndex].map(mailItem => (
           <Col key={mailItem.id}>
             <MailCard mailItem={mailItem}/>
           </Col>
         ))}
         </Row>
+        </div>
       <Row>
         <GalleryFooter totalMailItems={mailItems.length} onNextPage={onNextPage} onPreviousPage={onPreviousPage} currentPage={currentPage} totalPages={mailChunks.length} />
       </Row>

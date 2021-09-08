@@ -16,8 +16,8 @@ export const GalleryFooter = ({ totalMailItems, totalPages, currentPage, onPrevi
           </strong> mail items
         </Col>
         <Col xs="6">
-          <Button color="secondary" disabled={currentPage === 1} onClick={() => onPreviousPage(currentPage, totalPages)}>Previous</Button>
-          <Button color="secondary" disabled={currentPage === totalPages} onClick={() => onNextPage(currentPage, totalPages)}>Next</Button>
+          <Button color="" disabled={currentPage === totalPages} onClick={() => onNextPage(currentPage, totalPages)} className="gallery-footer-btn">Next</Button>
+          <Button color="" disabled={currentPage === 1} onClick={() => onPreviousPage(currentPage, totalPages)} className="gallery-footer-btn">Previous</Button>
         </Col>
       </Row>
     </Container>

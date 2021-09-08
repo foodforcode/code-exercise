@@ -44,9 +44,9 @@ export const Main = () => {
   console.log('current page:', currentPage );
   console.log('mailChunkIndex:', mailChunkIndex);
   return (
-    <div className="Main">
+    <div>
       <Header />
-      <Container>
+      <Container className="main">
         {mailChunks.length > 0 ?
           <MailGallery mailChunks={mailChunks} mailItems={mailItems} mailChunkIndex={mailChunkIndex} onPreviousPage={handlePagePrevious} onNextPage={handlePageNext} currentPage={currentPage} totalPages={totalPages} /> : (null)
         }
