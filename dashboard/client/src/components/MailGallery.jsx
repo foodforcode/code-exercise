@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { MailCard } from './MailCard';
 import { GalleryHeader } from './GalleryHeader';
 import { GalleryFooter } from './GalleryFooter';
-import { MailCard } from './MailCard';
 
 export const MailGallery = ({ mailItems, mailChunks, mailChunkIndex, onPreviousPage, onNextPage, currentPage, totalPages }) => {
 
@@ -19,7 +19,13 @@ export const MailGallery = ({ mailItems, mailChunks, mailChunkIndex, onPreviousP
           </Row>
         </div>
       <Row>
-        <GalleryFooter totalMailItems={mailItems.length} onNextPage={onNextPage} onPreviousPage={onPreviousPage} currentPage={currentPage} totalPages={mailChunks.length} />
+        <GalleryFooter
+          totalMailItems={mailItems.length}
+          onNextPage={onNextPage}
+          onPreviousPage={onPreviousPage}
+          currentPage={currentPage}
+          totalPages={mailChunks.length}
+        />
       </Row>
     </Container>
   )

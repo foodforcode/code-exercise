@@ -6,7 +6,16 @@ import ProcessingIcon from '../../dist/images/processing.svg';
 export const ForwardStatus = ({ status }) => {
   return (
     <div>
-      {status === 'completed' ? <MailCardRow info={'Forwarded'} src={ForwardIcon} /> : <MailCardRow info={'Forward processing'} src={ProcessingIcon} />}
+      {status === 'completed' ? (
+        <MailCardRow
+          info={'Forwarded'}
+          src={ForwardIcon} />
+      ) : (
+        <MailCardRow
+          info={'Forward processing'}
+          src={ProcessingIcon}
+        />
+      )}
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import chunkMail from '../../../utils/chunkMail.js';
 import { Container, Row } from 'reactstrap';
-import { MailGallery } from './MailGallery';
+import axios from 'axios';
 import { Header } from './Header';
+import { MailGallery } from './MailGallery';
+import chunkMail from '../../../utils/chunkMail.js';
 
 
 export const Main = () => {
@@ -32,7 +32,7 @@ export const Main = () => {
       setTotalPages(mailChunks.length);
     })
     .catch(error => {
-      console.log('error', error);
+      console.log('error:', error);
       })
   }
 
@@ -45,7 +45,15 @@ export const Main = () => {
       <Header />
       <Container className="main">
         {mailChunks.length > 0 ?
-          <MailGallery mailChunks={mailChunks} mailItems={mailItems} mailChunkIndex={mailChunkIndex} onPreviousPage={handlePagePrevious} onNextPage={handlePageNext} currentPage={currentPage} totalPages={totalPages} /> : (null)
+          (<MailGallery
+            mailChunks={mailChunks}
+            mailItems={mailItems}
+            mailChunkIndex={mailChunkIndex}
+            onPreviousPage={handlePagePrevious}
+            onNextPage={handlePageNext}
+            currentPage={currentPage}
+            totalPages={totalPages}
+            />) : (null)
         }
       </Container>
     </div>

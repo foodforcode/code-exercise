@@ -1,10 +1,10 @@
 import React from 'react';
+import { ScanStatus } from './ScanStatus';
 import { CardSubtitle } from 'reactstrap';
+import { ShredStatus } from './ShredStatus';
+import { ForwardStatus } from './ForwardStatus';
 import { BusinessRecipient } from './BusinessRecipient';
 import { IndividualRecipient } from './IndividualRecipient';
-import { ShredStatus } from './ShredStatus';
-import { ScanStatus } from './ScanStatus';
-import { ForwardStatus } from './ForwardStatus';
 import ForwardIcon from '../../dist/images/forward.svg';
 import ProcessingIcon from '../../dist/images/processing.svg';
 

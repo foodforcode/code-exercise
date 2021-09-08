@@ -6,7 +6,16 @@ import ProcessingIcon from '../../dist/images/processing.svg';
 export const ScanStatus = ({ status }) => {
   return (
     <div>
-      {status === 'completed' ? <MailCardRow info={'Scanned'} src={ScanIcon} /> : <MailCardRow info={'Scan processing'} src={ProcessingIcon} />}
+      {status === 'completed' ? (
+        <MailCardRow
+          info={'Scanned'}
+          src={ScanIcon} />
+        ) : (
+        <MailCardRow
+          info={'Scan processing'}
+          src={ProcessingIcon}
+        />
+      )}
     </div>
   )
 }
