@@ -7,7 +7,7 @@ Each individual piece can be quickly and easily identified and viewed with up-to
 
 
 ## Demo (Public):
-Navigate to the [Stable Dashboard](https://stable-dashboard.herokuapp.com/) in your brower to view and demo the dashboard.
+Navigate to the deployed [Stable Dashboard](https://stable-dashboard.herokuapp.com/) in your brower to view and demo the dashboard.
 
 ## Demo (Local):
 > Note: This application was developed on a machine using an ARM processor, which may lead to unexpected issues during building on Linux/other systems.
@@ -82,7 +82,7 @@ Navigate to localhost:3000 in your browser to view and use dashboard
 - Build tools:
 
 
-> Webpack: This webpack is a custom configuration for this dashboard, chosen over use of Create React App for customizability and scalability. Webpack with Babel is used as a compiler and transpiler and bundler to allow browers to read code written in jsx as js in one convenient but large bundle. Can easily be configured for the addition of Sass and other libraries as needed during scaling.
+> Webpack: This webpack is a custom configuration for this dashboard application, chosen over Create React App for customizabization and scalability. Webpack with Babel is used as a compiler and transpiler and bundler to allow browers to read code written in jsx as js in one convenient but large bundle. Can easily be configured for the addition of Sass and other libraries as needed during scaling.
 
 > Heroku: Integrates with Github for automatic deployments.
 ### Technologies:
