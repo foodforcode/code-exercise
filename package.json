@@ -5,7 +5,7 @@
   "main": "dashboard/index.js",
   "scripts": {
     "start": "node dashboard/server/index.js",
-    "heroku-postbuild": "webpack -p",
+    "heroku-postbuild": "webpack",
     "react-dev": "webpack",
     "server": "nodemon dashboard/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
