@@ -19,9 +19,9 @@ Navigate to the deployed [Stable Dashboard](https://stable-dashboard.herokuapp.c
 
 ### Installation:
 1. `git clone https://github.com/foodforcode/code-exercise.git`
-2. `cd dashboard/` into the dashboard directory
-3. `npm install` in your terminal will install all dependencies
-4. `npm start` in your terminal will start server and build bundle using webpack
+2. `npm install` in your terminal to install all dependencies.
+3. `npm start` in your terminal to start server.
+4. `npm run react-dev` in separate terminal window to build bundle.
 
 ### View in browser:
 Navigate to localhost:3000 in your browser to view and use dashboard
@@ -31,7 +31,9 @@ Navigate to localhost:3000 in your browser to view and use dashboard
 
    *Note: Requirements state Noto Sans font, however mocks ups utilize IBM Plex Sans font*
 
-   The web application aligns with mocks ups from top to bottom, including favicon to page change button hover effects.  
+   The web application is virtually indistinguishable from mocks ups.
+   
+   Bonus: Check out the tab for a familiar favicon!
 
 2. ✅  The web application is accessible from the public internet
 
@@ -39,11 +41,11 @@ Navigate to localhost:3000 in your browser to view and use dashboard
 
 3. ✅  Users are able to view 6 mail items per page, with a maximum of 3 items per row
 
-   The dashboard is limited to two rows of three mail items per page to view for a total of 6 items per page
+   The dashboard is limited to two rows of three mail items per page to view for a total of 6 items per page.
 
 4. ✅  Users can click through multiple pages when there are more than 6 mail items to display
 
-   Next and previous buttons allow users to view additional pages when there are greater than 6 mail items
+   Next and previous buttons allow users to view additional pages when there are greater than 6 mail items.
 
 5. ✅  Users can easily interact with the web application in all screen sizes
 
@@ -51,7 +53,7 @@ Navigate to localhost:3000 in your browser to view and use dashboard
 
 6. ✅  The mock mail item data provided in the data.json file is served to the frontend via an endpoint
 
-   Data is served via an Node/Express server at the `/mail` endpoint
+   Mail data is served at the `/mail` endpoint via an Node/Express server.
 
 7. ✅  The codebase is pushed to a remote repository
 
