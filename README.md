@@ -32,8 +32,6 @@ Navigate to localhost:3000 in your browser to view and use dashboard
    *Note: Requirements state Noto Sans font, however mocks ups utilize IBM Plex Sans font*
 
    The web application is virtually indistinguishable from mocks ups.
-   
-   Bonus: Check out the tab for a familiar favicon!
 
 2. ✅  The web application is accessible from the public internet
 
@@ -57,7 +55,11 @@ Navigate to localhost:3000 in your browser to view and use dashboard
 
 7. ✅  The codebase is pushed to a remote repository
 
-   The codebase is hosted as a git repository on Github: [Source Code](https://github.com/foodforcode/code-exercise) 
+   The codebase is hosted as a git repository on Github: [Source Code](https://github.com/foodforcode/code-exercise)
+   
+* Bonus: 
+   * Peep the tab of the web application for a familiar favicon!
+   * Added minimal, subtle hover effects to add microinteractions for a more interactive page.
 
 ### Architecture:
 - Front end:
