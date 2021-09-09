@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import moment from 'moment';
 import { Card, CardBody, CardTitle, CardImg, CardFooter } from 'reactstrap';
 
-import { MailCardInfo } from './MailCardInfo';
-import { MailCardImage } from './MailCardImage';
+import { MailCardInfo } from './MailCardInfo.jsx';
+import { MailCardImage } from './MailCardImage.jsx';
 
 export const MailCard = ({ mailItem }) => {
   return (

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'reactstrap';
 import axios from 'axios';
-import { Header } from './Header';
-import { MailGallery } from './MailGallery';
+import { Header } from './Header.jsx';
+import { MailGallery } from './MailGallery.jsx';
 import chunkMail from '../../../utils/chunkMail.js';
 
 

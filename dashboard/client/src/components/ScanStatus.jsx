@@ -1,5 +1,5 @@
 import React from 'react';
-import { MailCardRow } from './MailCardRow';
+import { MailCardRow } from './MailCardRow.jsx';
 import ScanIcon from '../../dist/images/scan.svg';
 import ProcessingIcon from '../../dist/images/processing.svg';
 

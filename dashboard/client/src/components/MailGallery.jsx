@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { MailCard } from './MailCard';
-import { GalleryHeader } from './GalleryHeader';
-import { GalleryFooter } from './GalleryFooter';
+import { MailCard } from './MailCard.jsx';
+import { GalleryHeader } from './GalleryHeader.jsx';
+import { GalleryFooter } from './GalleryFooter.jsx';
 
 export const MailGallery = ({ mailItems, mailChunks, mailChunkIndex, onPreviousPage, onNextPage, currentPage, totalPages }) => {
 

@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './client/src/index.js',
+  entry: './dashboard/client/src/index.js',
   output: {
-    path: path.join(__dirname, 'client/dist'),
+    path: path.resolve(__dirname, 'dashboard/client/dist'),
     filename: 'bundle.js'
   },
   watch: true,
@@ -14,15 +14,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js|jsx/,
-        include: path.join(__dirname, 'client/src'),
+        test: /\.m?js|jsx$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ]
+          }
         }
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
           'style-loader',
           'css-loader'
@@ -35,7 +40,8 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'images'
+              outputPath: 'images',
+              esModule: false
             },
           },
         ],
