@@ -7,7 +7,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dashboard/client/dist'),
     filename: 'bundle.js'
   },
-  watch: true,
   resolve: {
     extensions: ['.js', '.jsx']
   },
