@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './dashboard/client/src/index.js',
   output: {
     path: path.resolve(__dirname, 'dashboard/client/dist'),

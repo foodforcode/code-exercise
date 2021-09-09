@@ -4,7 +4,8 @@
   "description": "",
   "main": "dashboard/index.js",
   "scripts": {
-    "start": "webpack & node dashboard/server/index.js",
+    "start": "node dashboard/server/index.js",
+    "heroku-postbuild":"webpack -p",
     "react-dev": "webpack",
     "server": "nodemon dashboard/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
