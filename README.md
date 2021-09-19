@@ -54,7 +54,7 @@ Navigate to localhost:3000 in your browser to view and use dashboard
    Mail data is served at the `/mail` endpoint via an Node/Express server.
 
 7. ✅  The codebase is pushed to a remote repository
-
+   
    The codebase is hosted as a git repository on Github: [Source Code](https://github.com/foodforcode/code-exercise)
    
 * Bonus: 
@@ -73,7 +73,7 @@ Navigate to localhost:3000 in your browser to view and use dashboard
 > Axios: A promise-based library for making HTTP requests and handling responses.
 
 
-> Moment: A simple library used to convert the Unix timestamp in provided data, to the Month, DD, YYY format. (Deprecated; an oldie but a goodie.)
+> Moment: A simple library used to convert the Unix timestamp in provided data, to the Month, DD, YYYY format. (Deprecated; an oldie but a goodie.)
 
 
 - Back end:
